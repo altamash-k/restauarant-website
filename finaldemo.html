@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING DEMO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9168b027c9.js" crossorigin="anonymous"></script>
+    
+    <style>
+        
+        body{
+            background-image: linear-gradient(to bottom right, blueviolet, cornflowerblue);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        #grad {
+            height: 98vh;
+            width: 98.8vw;
+            margin-top: 0vh;
+            position: fixed;
+            margin: 0% 0% 0% 0%;
+            background-image: url("tri_bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .triangle1{
+            margin-top: 8.8vw;
+            margin-left: 57vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 20px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        @keyframes tri {
+            0% {transform: rotate(-360deg); left: 0px;}
+            50% {left: 200px;}
+            100% {transform: rotate(-10deg); left: 0px;}
+            
+        }
+        
+        .triangle2{
+            margin-left: 3vw;
+            margin-top: 14vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 20px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle3{
+            margin-left: 12vw;
+            margin-top: 21vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 10px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 60px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle4{
+            margin-left: 24vw;
+            margin-top: 5vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 30px solid transparent;
+            border-right: 45px solid transparent;
+            border-top: 60px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle5{
+            margin-left: 32vw;
+            margin-top: 41vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 20px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle6{
+            margin-left: 16vw;
+            margin-top: 29vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 20px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle7{
+            margin-left: 50vw;
+            margin-top: 40vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 60px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 50px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle8{
+            margin-left: 21vw;
+            margin-top: 22vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 50px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 30px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle9{
+            margin-left: 40vw;
+            margin-top: 5vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 20px solid transparent;
+            border-right: 46px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle10{
+            margin-left: 6vw;
+            margin-top: 41vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 25px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 30px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle11{
+            margin-left: 34vw;
+            margin-top: 48vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 25px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle12{
+            margin-left: 48vw;
+            margin-top: 23vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 30px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle13{
+            margin-left: 16vw;
+            margin-top: 8vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 60px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 20px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle14{
+            margin-left: 50vw;
+            margin-top: 56vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 25px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 40px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle15{
+            margin-left: 4vw;
+            margin-top: 2vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 30px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 50px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle16{
+            margin-left: 67vw;
+            margin-top: 4vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 60px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle17{
+            margin-left: 81vw;
+            margin-top: 14vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 25px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 60px solid blueviolet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .triangle18{
+            margin-left: 18vw;
+            margin-top: 46vw;
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            border-left: 30px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 30px solid violet;
+            animation-name: tri;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .car1{
+            background-color: transparent;
+            border-radius: 5vw;
+            border: 2px solid white;
+        }
+        
+        .content{
+            align-content: center;
+            align-self: center;
+            border: 2px solid white;
+            border-radius: 3vw;
+            padding-left: 2vw;
+            padding-top: 18vw;
+            position: absolute;
+            height: 20vw;
+            width: 40vw;
+            margin-top: 7vw;
+            margin-left: 30vw;
+        }
+        
+        .signup_content{
+            align-content: center;
+            align-self: center;
+            border: 2px solid white;
+            border-radius: 3vw;
+            padding-left: 2vw;
+            padding-top: 4vw;
+            position: absolute;
+            height: 32.5vw;
+            width: 68vw;
+            margin-top: 7vw;
+            margin-left: 15vw;
+        }
+        
+        input{
+            color: white;
+            background-color: transparent;
+            border: 2px solid transparent;
+            font-size: 2vw;
+            padding-left: 2vw;
+            border-radius: 3vw;
+            margin-top: 2.5vh;
+            height: 3.8vw;
+            width: 35.2vw;
+        }
+        
+        a{
+            color: white;
+            font-size: 2vw;
+            margin-top: 76vw;
+            margin-left: 2vw;
+        }
+        
+        a:hover{
+            color: violet;
+        }
+        
+        .head-img{
+            height: 18vw;
+            width: 39.8vw;
+            margin-left: -1vw;
+            margin-top: -17vw;
+            position: absolute;
+            border-start-end-radius: 3vw;
+            border-start-start-radius: 3vw;
+            border-radius: 3vw;
+        }
+        
+        .login1{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            margin-left: 26.5vw;
+            border-radius: 3vw;
+            margin-top: -4vw;
+            position: absolute;
+            height: 5vw;
+            font-size: 2vw;
+            width: 12vw;
+        }
+        
+        .sign1{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            margin-left: 2vw;
+            border-radius: 3vw;
+            margin-top: 2vw;
+            position: absolute;
+            height: 5vw;
+            font-size: 2vw;
+            width: 12vw;
+        }
+        
+        .login1:hover{
+            background-color: rgb(236,59,131);
+            cursor: pointer;
+        }
+        
+        .fa-eye{
+            color: white;
+            position: absolute;
+            font-size: 1.5vw;
+            margin-left: -4.6vw;
+            margin-top: 5vh;
+        }
+        
+        .fa-circle{
+            color: white;
+            position: absolute;
+            font-size: 1.5vw;
+            margin-left: -4.6vw;
+            margin-top: 5vh;
+        }
+        
+        .signup1{
+            position: absolute;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 3vw;
+            height: 5vw;
+            font-size: 2vw;
+            width: 12vw;
+            color: white;
+            margin-top: 2vw;
+            margin-left: 84vw;
+        }
+        
+        .signup1:hover{
+            background-color: rgb(236,59,131);
+            cursor: pointer;
+        }
+        
+        .sign1:hover{
+            background-color: rgb(236,59,131);
+            cursor: pointer;
+        }
+        
+        .img2{
+            height: 32vw;
+            width: 26vw;
+            position: absolute;
+            border-radius: 3vw;
+            margin-left: 40vw;
+            margin-top: -2vw;
+        }
+        .error{
+            position: absolute;
+            top: -110%; left: 31%;
+            padding: 1% 17%;
+            border-radius: 3px;
+            background-color: transparent;
+            border-radius: 3vw;
+            border: 2px solid white;
+            margin-left: -2vw;
+            color: crimson;
+            display: none;
+            font-size: larger;
+        }
+        
+        .error::before{
+            content: "";
+            width: 0;
+            height: 0;
+            
+            position: absolute;
+            bottom: -21%; left: 10%;
+        }
+        
+        .error:nth-child(2){
+            top: 70px;
+            background-color: powderblue;
+        }
+        
+        .error:nth-child(2)::before{
+            border-top: 9px solid #D9F0FD;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="grad">
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <div class="triangle3"></div>
+        <div class="triangle4"></div>
+        <div class="triangle5"></div>
+        <div class="triangle6"></div>
+        <div class="triangle7"></div>
+        <div class="triangle8"></div>
+        <div class="triangle9"></div>
+        <div class="triangle10"></div>
+        <div class="triangle11"></div>
+        <div class="triangle12"></div>
+        <div class="triangle13"></div>
+        <div class="triangle14"></div>
+        <div class="triangle15"></div>
+        <div class="triangle16"></div>
+        <div class="triangle17"></div>
+        <div class="triangle18"></div>
+        <div class="card1">
+            <div class="wrapper">
+                
+                <div class="container login" id="login_page">
+                    <button class="signup1" onclick="swap()" >Sign Up</button>
+                    <label for="Tooltips" class="error"></label>
+                    <div class="content">
+                        
+                        <img class="head-img" src="https://image.freepik.com/free-vector/pink-purple-triangles-wallpaper_23-2148384587.jpg" alt="decorative stuff">
+                        
+                        <input type="email" placeholder="Email" id="emailid">
+                        <div class="inputWithIcon">
+                            <input type="password" placeholder="Password" id="password">
+                            <i  class="fa fa-eye" id="togglePassword"></i>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <a onclick="forgotpassword()" id="forgotpassword">Forgot password?</a><br>
+                        <button class="login1" onclick="transfer1()">Login</button>
+                    </div>
+                </div>
+                <div class="signup" id="signup_page">
+                    <button class="signup1" onclick="back()" >Login</button>
+                    <label for="Tooltips" class="error"></label>
+                    <div class="signup_content">
+                        <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwhwNVRadSdWNBEG9sWUiLAoMwxLtzXCUE9Q&usqp=CAU">
+                        <!-- https://png.pngtree.com/png-vector/20190611/ourlarge/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg -->
+                        <input type="email" placeholder="Email" id="newemailid" >
+                        <input type="text" placeholder="Username" id="username" >
+                        <div class="inputWith2Icon">
+                            <input type="password" placeholder="Password"  id="newpassword" onkeyup="check()">
+                            <i class="fa fa-eye" id="togglenewPassword"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="password" placeholder="Confirm password" id="confirmPassword" onkeyup="check()">
+                            <i class="fa fa-circle" id="indicator"></i>
+                        </div>
+                        <button class="sign1" onclick="transfer2()" id="sign1">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        function forgotpassword() {
+            alert("Coming Soon");
+        }
+        
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        
+        togglePassword.addEventListener('click', function (e) {
+            
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+        
+        const togglenewPassword = document.querySelector('#togglenewPassword');
+        const newpassword = document.querySelector('#newpassword');
+        const confirmPassword = document.querySelector('#confirmPassword');
+        
+        togglenewPassword.addEventListener('click', function (e) {
+            
+            const type = newpassword.getAttribute('type') === 'password' ? 'text' : 'password';
+            newpassword.setAttribute('type', type);
+            const conf_type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPassword.setAttribute('type', conf_type);
+            this.classList.toggle('fa-eye-slash');
+        });
+        
+        function transfer1()
+        {
+            $(document).ready(function(){
+                $('.login1').on('click', function(){
+                    if($('#emailid').val() == ""){
+                        $('.error').text('Email Required..!');
+                        $('.error').fadeIn("slow");
+                        $('.error').fadeOut("slow");
+                    }
+                    else if($('#password').val() == ""){
+                        $('.error').text('Password Required..!');
+                        $('.error').fadeIn("slow");
+                        $('.error').fadeOut("slow");
+                    }
+                    else{
+                        window.location="main.html";
+                    }
+                });
+            });
+            
+        }
+        
+        function transfer2()
+        {
+            $(document).ready(function(){
+                $('.sign1').on('click', function(){
+                    if($('#newemailid').val() == ""){
+                        $('.error').text('Email Required..!');
+                        $('.error').fadeIn("slow");
+                        $('.error').fadeOut("slow");
+                    }
+                    else if($('#username').val() == ""){
+                        $('.error').text('Username Required..!');
+                        $('.error').fadeIn("slow");
+                        $('.error').fadeOut("slow");
+                    }
+                    else if($('#newpassword').val() == ""){
+                        $('.error').text('Password Required..!');
+                        $('.error').fadeIn("slow");
+                        $('.error').fadeOut("slow");
+                    }
+                    else{
+                        window.location="main.html";
+                    }
+                });
+            });
+            
+        }
+        
+        $(document).ready(function(){
+            $('#emailid').on('focusout', function(){
+                if($('#emailid').val() != ""){
+                    if(validateEmail($('#emailid').val())){
+                        $('.error').fadeOut('slow');
+                    }else{
+                        $('.error').text('Invalid Email...!');
+                        $('.error').fadeIn('slow');
+                        $('.error').fadeOut("slow");
+                    }
+                }else{
+                    $('.error').text('Email Required..!');
+                    $('.error').fadeIn("slow");
+                    $('.error').fadeOut("slow");
+                }
+            });
+        });
+        $(document).ready(function(){
+            $('#newemailid').on('focusout', function(){
+                if($('#newemailid').val() != ""){
+                    if(validateEmail($('#newemailid').val())){
+                        $('.error').fadeOut('slow');
+                    }else{
+                        $('.error').text('Invalid Email...!');
+                        $('.error').fadeIn('slow');
+                        $('.error').fadeOut("slow");
+                    }
+                }else{
+                    $('.error').text('Email Required..!');
+                    $('.error').fadeIn("slow");
+                    $('.error').fadeOut("slow");
+                }
+            });
+        });
+        
+        $(document).ready(function(){
+            $('#password').on('focusout', function(){
+                if($('#password').val() == ""){
+                    $('.error').text('Password Required..!');
+                    $('.error').fadeIn("slow");
+                    $('.error').fadeOut("slow");
+                }
+            });
+        });
+        
+        $(document).ready(function(){
+            $('#newpassword').on('focusout', function(){
+                if($('#newpassword').val() == ""){
+                    $('.error').text('Password Required..!');
+                    $('.error').fadeIn("slow");
+                    $('.error').fadeOut("slow");
+                }
+                else if($('#newpassword').val().length <= 6){
+                    $('.error').text('Password must be longer than 6 characters');
+                    $('.error').fadeIn("slow");
+                }
+                else if($('#newpassword').val().length >= 20){
+                    $('.error').text('Password must be less than 20 characters');
+                    $('.error').fadeIn("slow");
+                }
+            });
+        });
+        
+        $(document).ready(function(){
+            $('#username').on('focusout', function(){
+                if($('#username').val() == ""){
+                    $('.error').text('Username Required..!');
+                    $('.error').fadeIn("slow");
+                    $('.error').fadeOut("slow");
+                }
+            });
+        });
+        
+        function validateEmail(eVal){
+            var val = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            
+            if( val.test(eVal)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        
+        var check = function () {
+            if (document.getElementById("confirmPassword").value.length == 0) {
+                document.getElementById("indicator").style.color = "white";
+            }
+            else
+            { if (
+                document.getElementById("newpassword").value ==
+                document.getElementById("confirmPassword").value
+                ) {
+                    document.getElementById("indicator").style.color = "rgb(103, 212, 64)";
+                    
+                } else {
+                    document.getElementById("indicator").style.color = "rgb(228, 52, 52)";
+                    
+                }
+            }
+        };
+        
+        function checkPassword(password, confirmPassword) {
+            
+            if (password == confirmPassword) {
+                return true;
+            }
+            return false;
+        }
+        document.getElementById("login_page").style.display="block";
+        document.getElementById("signup_page").style.display="none";
+        
+        function swap(){
+            document.getElementById("login_page").style.display="none";
+            document.getElementById("signup_page").style.display="block";
+        }
+        
+        function back(){
+            document.getElementById("login_page").style.display="block";
+            document.getElementById("signup_page").style.display="none";
+        }
+        
+    </script>
+</body>
+</html>

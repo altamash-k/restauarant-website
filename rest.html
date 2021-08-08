@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO HOME</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9168b027c9.js" crossorigin="anonymous"></script>
+    
+    <style>
+        
+        body{
+            background-image: linear-gradient(to bottom right, blueviolet, cornflowerblue);
+            background-repeat: no-repeat;
+            position: fixed;
+            background-attachment: fixed;
+        }
+        
+        .search{
+            height: 6vw;
+            margin-left: -1vw;
+            width: 44vw;
+            color: white;
+            font-size: 2.5vw;
+            font-style: italic;
+        }
+        
+        .tab{
+            color: black;
+            background-color: transparent;
+            border: 2px solid white;
+            height: 4vw;
+            padding-left: 2vw;
+            border-radius: 3vw;
+            font-size: 2vw;
+            width: 54vw;
+        }
+        
+        .drop3{
+            color: black;
+            background-color: transparent;
+            border: 2px solid white;
+            height: 4vw;
+            border-radius: 3vw;
+            padding-left: 2vw;
+            font-size: 2vw;
+            width: 28vw;
+        }
+        
+        .top{
+            margin-top: 2vw;
+            margin-left: 30vw;
+        }
+        
+        .dropdown{
+            height: 20vw;
+            width: 20vw;
+            background-color: transparent;
+            border-radius: 3vw;
+            border: 2px solid white;
+            overflow: auto;
+        }
+        
+        .down{
+            border: 2px solid transparent;
+            background-color: transparent;
+            margin-left: 2vw;
+            height: 34vw;
+            width: 94.4vw;
+            
+        }
+        
+        .slide{
+            border: 2px solid transparent;
+            background-color: transparent;
+            margin-left: 2vw;
+            margin-top: 1vw;
+            height: 30vw;
+            width: 90vw;
+            overflow-y: hidden;
+            overflow-x: auto;
+            display: flex;
+        }
+        
+        img{
+            height: 20vw;
+            width: 40vw;
+            border-radius: 3vw;
+        }
+        
+        .title{
+            color: white;
+            font-size: 2vw;
+            margin-top: 2vw;
+            font-style: italic;
+            margin-left: 2vw;
+            cursor: pointer;
+        }
+        
+        .list{
+            margin-left: 5vw;
+            margin-top: 0vw;
+            border-radius: 3vw;
+            border: 2px solid white;
+            height: 30vw;
+            width: 50vw;
+            align-content: center;
+            float: left;
+            margin-bottom: 2vw;
+        }
+        .list:hover{
+            margin-left: 5vw;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+            border-radius: 3vw;
+            align-content: center;
+            border: 2px solid white;
+            cursor: pointer;
+            height: 10vw;
+            width: 40vw;
+            -ms-transform:scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        .slide::-webkit-scrollbar {
+            height: 0.4vh;
+            width: 6vw;
+            padding-right: 2vw;
+        }
+        
+        .slide::-webkit-scrollbar-thumb {
+            background: transparent;
+            border-radius: 0.2vw;
+        }
+        
+        .slide::-webkit-scrollbar-track-piece:end {
+            margin-left: 4vh; 
+        }
+        
+        .slide::-webkit-scrollbar-track-piece:start {
+            margin-right: 4vh;
+        }
+        
+        .name{
+            color: white;
+            font-size: 3.5vw;
+            font-style: italic;
+            margin-left: 16vw;
+            margin-top: -2vw;
+            align-self: center;
+        }
+        
+        .name:hover{
+            color: crimson;
+        }
+        
+        .material-icons.rating::before{
+            color: crimson;
+            font-size: 2vw;
+            display: flex;
+            margin-left: 8vw;
+        }
+        
+        .title2{
+            margin-left: 26vw; 
+            margin-top: -1.4vw;
+            color: white;
+            font-size: 2vw;
+        }
+        
+        .list:hover .title2{
+            color: crimson;
+        }
+        
+        .logo{
+            height: 12vw;
+            margin-left: -26vw;
+            width: 12vw; 
+            position: absolute;
+            float: left;
+        }
+        
+        .sticker{
+            height: 12vw;
+            width: 12vw;
+            position: absolute;
+            margin-left: 52vw;
+            margin-top: -7.2vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="data">
+        <div class="top">
+            <img class="logo" src="logo3k10.png"><br><br><br>
+            <h1 class="name" style="font-size: 300%;">K-10</h1>
+            <img class="sticker" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSMqTW4nAKj8pQNfC60pF9PwoJTwULLFcqwg&usqp=CAU">
+            <div class="search">
+                <!-- <input class="tab" type="text" placeholder="Search.." id="myInput" onclick="myFunction()" onkeyup="filterFunction()" /> -->
+                <p>An oasis of pleasure. We serve passion!!!</p>
+            </div>
+        </div>
+        <div class="down">
+            <div data-tilt data-tilt-scale="1.1"></div>
+            <span class="slide">
+                
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDN4BbCm0fdViRKp7k4QN4iPmipyqJH2UIVQ&usqp=CAU">
+                    <p class="title">NOODLES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>150/-</b></p>
+                    <p class="title2" >Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTCAW8cgdoLA1R06OpKeFJLNZE4B_FewbRISg&usqp=CAU">
+                    <p class="title">PIZZA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>360/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTiFo9-ZVEWJsEw7NVh5_7RgH01I2W2tnwMIg&usqp=CAU">
+                    <p class="title">ICE-CREAM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>250/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTms1haCb-63YY5XI2T0rz4rrgWyn76w8VhDA&usqp=CAU">
+                    <p class="title">CAKE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>650/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmVkyPTWaOVG4zol7w-D5l2a4G868dBMhfrg&usqp=CAU">
+                    <p class="title">BIRYANI &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>400/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRc4kpKjVQEAG-Sllb-pNMKlQJAgYLNTB-maw&usqp=CAU">
+                    <p class="title">CHOLE BHATURE &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; <b>240/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgWfJ2OxH6VPizIUuSDQnjq1eh2wBoFDd-Wg&usqp=CAU">
+                    <p class="title">CHICKEN CURRY &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp;<b>400/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcC0Hq62URI1tS_VBIi84aLQDjLvdvrRTimw&usqp=CAU">
+                    <p class="title">GULAB JAMUN &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>860/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4F8iRtlg338vlFfxoH37l5-JyYczkbfgWUg&usqp=CAU">
+                    <p class="title">PASTA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>220/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYOgASt6fGYK9DfJ14XhBsZcHwERI9RRYf9g&usqp=CAU">
+                    <p class="title">CHILLI PANEER &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>380/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM-WEgZ2xygCe3HO6Sc_m6oZzMuyTnNUFpww&usqp=CAU">
+                    <p class="title">PANEER TIKKA &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>350/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3_sQ8Yaq-TVfIylR0QIIe5orFdHCXvgBr5g&usqp=CAU">
+                    <p class="title">MANCHURIAN &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>250/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQADUIAaxLSUIUaCJcrwNAgks2o0M1KPH205A&usqp=CAU">
+                    <p class="title">NAAN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>120/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQ4aHBhaMfxAj6ImKiDQ4b9opRk6YT5F-IzA&usqp=CAU">
+                    <p class="title">MASALA DOSA &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>240/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                <span class="list">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTz_q7XCJwLRsg2ziOfPmp4up31Uslz1Ws9aA&usqp=CAU">
+                    <p class="title">MILK SHAKES &nbsp; &nbsp; &nbsp; &nbsp;<span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star</span><span class="material-icons rating">star_half</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>120/-</b></p>
+                    <p class="title2">Order Now!!</p>
+                </span>
+                
+            </span>
+        </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script src="vanilla-tilt.js"></script>
+</body>
+</html>

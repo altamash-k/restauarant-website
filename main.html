@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9168b027c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    
+    <style>
+    
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+      html, body {
+          height: 100%;
+          overflow: hidden;
+          font-family: 'Roboto Condensed', sans-serif;
+          
+      }
+      #grad {
+          height: 98vh;
+          width: 98.8vw;
+          margin-top: 0vh;
+          position: fixed;
+          margin: 0% 0% 0% 0%;
+          background-image: url("tri_bg.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+       .page {
+          height: 100%;
+          background-image: linear-gradient(to bottom right, blueviolet, cornflowerblue);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+         }
+       .content {
+          height: 200%;
+          transform-origin: top left;
+          transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+          background-image: url("tri_bg.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+         }
+       .content_inner {
+          height: 50%;
+          overflow-y: auto;
+          padding: 50px 20%;
+         }
+       .menu_toggle {
+          z-index: 900;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: block;
+          cursor: pointer;
+          width: 100px;
+          height: 80px;
+          background-color: palevioletred;
+          border-bottom-right-radius: 100%;
+         }
+       .menu_toggle:active i {
+          opacity: 0.8;
+         }
+       .menu_toggle i {
+          color: #f0f0f0;
+         }
+       .menu_toggle .menu_open, .menu_toggle .menu_close {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -12px;
+          transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+         }
+       .menu_toggle .menu_open {
+          transform-origin: -100px -100px;
+         }
+       .menu_toggle .menu_close {
+          transform: rotate(20deg);
+          transform-origin: -100px -160px;
+         }
+       .menu_items {
+          position: fixed;
+          bottom: 0;
+          left: 50px;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+         }
+       .menu_items li {
+          height: 60px;
+          margin-bottom: 30px;
+          transform: translateX(-300px);
+          transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+         }
+       .menu_items li:nth-child(2) {
+          margin-left: 40px;
+         }
+       .menu_items li:nth-child(3) {
+          margin-left: 80px;
+         }
+        .menu_items li:nth-child(4) {
+          margin-left: 120px;
+         }
+       .menu_items a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #a4a4a4;
+          transition: color 0.2s;
+         }
+       .menu_items a .icon {
+          position: relative;
+          display: inline-block;
+          margin-right: 25px;
+          color: #f0f0f0;
+         }
+       .menu_items a .icon:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: '';
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin-left: -33px;
+          margin-top: -32px;
+          border-radius: 100%;
+          border: 2px solid #f0f0f0;
+          transition: border-color 0.2s;
+         }
+       .menu_items a:hover {
+          color: #f0f0f0;
+         }
+       .menu_items a:hover .icon:after {
+          border-color: powderblue;
+         }
+       .menu_items a:active .icon {
+          color: powderblue;
+         }
+       .shazam .content {
+          transform: rotate(-30deg);
+         }
+       .shazam .menu_open {
+          transform: rotate(-20deg);
+         }
+       .shazam .menu_close {
+          transform: rotate(0);
+         }
+       .shazam .home{
+        transform: rotate(0);
+       }
+       .shazam .menu_items li {
+          transform: translateX(0);
+          transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+         }
+       .shazam .menu_items li:nth-child(2) {
+          transition-delay: 0.47s;
+         }
+       .shazam .menu_items li:nth-child(3) {
+          transition-delay: 0.48s;
+         }
+        .shazam .menu_items li:nth-child(4) {
+          transition-delay: 0.49s;
+         }
+       h1 {
+          padding-bottom: 15px;
+          border-bottom: 1px solid #ddd;
+         }
+       body {
+          color: powderblue;
+         }
+       .social i{
+          font-size: 20px;
+          background-color: palevioletred;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          color: white;
+          border-radius: 50px;
+         }
+             
+     </style>
+</head>
+<body>
+	
+  <div class="page">
+  <span class="menu_toggle">
+    <i class="menu_open fa fa-bars fa-lg"></i>
+    <i class="menu_close fa fa-times fa-lg"></i>
+  </span>
+  <ul class="menu_items">
+    <li><a href="rest.html" class="home"><i class="icon fa fa-utensils fa-2x"></i> Menu</a></li>
+    <li><a href="about.html"><i class="icon fa fa-heart fa-2x"></i> About Us</a></li>
+    <li><a href="feedbackdemo.html"><i class="icon fa fa-question fa-2x"></i> Feedback</a></li>
+    <li><a href="finaldemo.html"><i class="icon fa fa-sign-out fa-2x"></i>LogOut</a></li>
+  </ul>
+  <main class="content">
+
+    <div class="content_inner">
+      <img src="logo3k10.png" style="height: 120px; width: 120px; float: right;"><br><br><br>
+      <h1 style="font-size: 300%;">K-10</h1>
+      
+      <br><br><br> 
+      <div class="social">
+		  
+          <h2>Follow Us On:    <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a> </h2>
+      </div>
+      <br><br>
+      <h3>Welcome to K-10!!!<br>A place to fullfill all your cravings!!</h3>
+      <br><br>
+      <p>Our values include providing fair wages for workers, giving back to the communities we work with, and serving great meal. We imagine a world where there’s no such thing as a bad meal and all community people live prosperously. Our mission is to make customers happy.
+        Our mission is to share our family’s authentic INDIAN recipes with the world. Our mission is to be the most sustainable restaurant in India by sourcing our ingredients locally, supplementing produce with herbs grown on our rooftop garden, and giving back to the community through urban farming education.
+        Our mission is to give our customers a place to celebrate life’s special moments by offering the best food, service, and ambiance. Do right and far exceed expectations daily. We do the right thing and lead by putting people first. Each and every connection with our team, guests and shareholders is our opportunity to create an experience that FEEDs – Far Exceeds Expectations Daily – and show how much we care. To create an environment where absolute guest satisfaction is our highest priority. “Celebrate Life. Family. Food.” Our mission is to WOW people every day! Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how you want your drink – we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time.</p>
+	  
+    </div>
+	
+  </main>
+  	  
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    
+var $page = $('.page');
+
+$('.menu_toggle').on('click', function(){
+  $page.toggleClass('shazam');
+});
+$('.content').on('click', function(){
+  $page.removeClass('shazam');
+});
+    
+</script>
+</body>
+</html>

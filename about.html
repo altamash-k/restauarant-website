@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans",sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom right, cornflowerblue, blueviolet);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .about-section{
+            background: url(pic.jpg) no-repeat left ;
+            opacity: 80%;
+            background-size: 50%;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+
+        .inner-container{
+            width: 55%;
+            height: 40vw;
+            float: right;
+            background-color: #fdfdfd;
+            padding: 150px;
+            padding-left: 4vw;
+            margin-left: 10vw;
+        }
+
+        .inner-container h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .text{
+            font-size: 1.2vw;
+            color: #545454;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .skills{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        @media screen and (max-width:1200px){
+            .inner-container{
+                padding: 80px;
+            }
+        }
+
+        @media screen and (max-width:1000px){
+            .about-section{
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+            .inner-container{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            .about-section{
+                padding: 0;
+            }
+            .inner-container{
+                padding: 60px;
+            }
+        }
+
+        .logo{
+            height: 10vw;
+            width: 10vw;
+            float: right;
+            position: absolute;
+            margin-left: 34vw;
+            margin-top: -10vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <img class="logo" src="logo3k10.png" ><br><br><br>
+            <p class="text">
+                K-10 is a complete place for a foodie to fulfill his cravings.<br> People often gets confused while ordering somethinng, this platform will help you to pick the best cuisine that one desire and its specialities in a specified manner!!
+            </p>
+            <div class="skills">
+                <span>Crave</span>
+                <span>---------></span>
+                <span>Seach</span>
+                <span>---------></span>
+                <span>Order</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
